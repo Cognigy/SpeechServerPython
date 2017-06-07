@@ -4,6 +4,9 @@ Python example codes to connect to Cognigy speech server. The script spawns an a
 After sending chunks and end the stream, it wait for reply from brain.
 SocketIO wait will stop after an event come, so currently we listen only for reply from brain.
 
+# On connect params
+noTTs: only send audio for STT and wait reply from brain. Don't send to TTS since the audio chunk from TTS is not compatible.
+
 # Speech Server Events
 * stt_chunk_start - Signal speech server that a new stream started
 * stt_chunk - Send audio chunk to speech server stream
